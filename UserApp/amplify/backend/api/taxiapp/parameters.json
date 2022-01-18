@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "taxiapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authtaxiapp06c9e69b06c9e69b",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
